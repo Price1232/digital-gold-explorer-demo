@@ -11,6 +11,8 @@ It is the public edition of a private research project that studies Bitcoin's re
 research edition runs on third-party market data that cannot be republished, so this edition runs the same calculation and
 interface code on a synthetic dataset instead.
 
+> **Live demo:** https://digital-gold-explorer-demo.vercel.app
+> 
 ## Features
 
 - **Rolling correlation:** any pair, preset (30/90/252-day) or custom windows, optional Fisher-z 95% band, regime highlighting,
