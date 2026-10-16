@@ -1,0 +1,57 @@
+/* Portfolio-edition additions on top of the shared stylesheet. */
+
+.demo-banner {
+  margin: 0;
+  padding: 8px 24px;
+  background: #3a2f17;
+  color: #f6e7c1;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid #5b4a22;
+}
+
+.demo-banner a {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+.demo-pill {
+  padding: 4px 11px;
+  border-radius: 999px;
+  border: 1px solid #b0503d;
+  color: #8a3726;
+  background: #f8e3dc;
+  font-weight: 600;
+}
+
+.nav-note {
+  display: block;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+
+.method-list {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.6;
+}
+
+.method-list li + li {
+  margin-top: 4px;
+}
+
+.unavailable-copy {
+  max-width: 68ch;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .demo-banner {
+    padding: 8px 16px;
+    text-align: left;
+  }
+}
