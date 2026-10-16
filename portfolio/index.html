@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Gold Explorer (Demo)</title>
+    <meta name="description" content="Portfolio demo of an asset-relationship explorer. Synthetic data, not historical market observations." />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boot placeholder styles: inline so they apply before the app bundle downloads. -->
+    <style>
+      .boot { min-height: 100vh; display: flex; flex-direction: column; background: #f4efe4; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; }
+      .boot-banner { margin: 0; padding: 8px 16px; background: #3a2f17; color: #f6e7c1; font-size: 13px; font-weight: 600; text-align: center; }
+      .boot-top { display: flex; align-items: center; gap: 12px; padding: 12px 24px; background: #faf7f0; border-bottom: 1px solid #ddd3bf; color: #26221c; }
+      .boot-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: #26221c; color: #d4af5a; }
+      .boot-name { font-family: "Source Serif 4", Georgia, serif; font-size: 19px; font-weight: 600; }
+      .boot-body { flex: 1; display: grid; grid-template-columns: 236px 1fr; }
+      .boot-nav { border-right: 1px solid #ddd3bf; }
+      .boot-work { background: #18191c; color: #e4dfd5; padding: 48px 26px; }
+      .boot-work h1 { margin: 0 0 6px; font-family: "Source Serif 4", Georgia, serif; font-size: 22px; font-weight: 600; color: #f3eee4; }
+      .boot-work p { margin: 0; color: #9a9488; font-size: 14px; }
+      .boot-bar { margin-top: 20px; width: min(420px, 100%); height: 3px; border-radius: 3px; background: #2e2f35; overflow: hidden; }
+      .boot-bar span { display: block; width: 35%; height: 100%; background: #d4af5a; animation: boot-slide 1.4s ease-in-out infinite; }
+      @keyframes boot-slide { from { transform: translateX(-100%); } to { transform: translateX(300%); } }
+      @media (max-width: 860px) { .boot-body { grid-template-columns: 1fr; } .boot-nav { display: none; } .boot-work { padding: 32px 16px; } }
+      @media (prefers-reduced-motion: reduce) { .boot-bar span { animation: none; width: 100%; opacity: 0.4; } }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Replaced by React on first render (including its own loading and error states). -->
+      <div class="boot" data-boot="">
+        <p class="boot-banner">Portfolio demo — synthetic data, not historical market observations.</p>
+        <header class="boot-top"><span class="boot-mark" aria-hidden="true">◆</span><span class="boot-name">Digital Gold</span></header>
+        <div class="boot-body">
+          <div class="boot-nav" aria-hidden="true"></div>
+          <main class="boot-work" role="status" aria-live="polite">
+            <h1>Asset Relationship Explorer</h1>
+            <p id="boot-message">Loading the synthetic demo…</p>
+            <div class="boot-bar" aria-hidden="true"><span></span></div>
+            <noscript><p>This demo needs JavaScript to run. Please enable it and reload.</p></noscript>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="./boot.js" defer></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

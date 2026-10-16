@@ -1,0 +1,27 @@
+{
+  "name": "digital-gold-explorer-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Portfolio demo of an asset-relationship explorer. Synthetic data, not historical market observations.",
+  "scripts": {
+    "dev": "vite --config portfolio/vite.config.js",
+    "build": "npm run portfolio:build",
+    "preview": "vite preview --config portfolio/vite.config.js",
+    "test": "node --test \"portfolio/tests/*.test.js\"",
+    "portfolio:generate": "node portfolio/scripts/generate-synthetic.mjs",
+    "portfolio:build": "node portfolio/scripts/generate-synthetic.mjs --check && vite build --config portfolio/vite.config.js && node portfolio/scripts/verify-portfolio.mjs"
+  },
+  "dependencies": {
+    "plotly.js-cartesian-dist-min": "^4.1.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
