@@ -124,7 +124,7 @@ root; no environment variables are needed.
 
 ## Licence
 
-No licence has been chosen yet. Until one is added, all rights are reserved by the author: you may read the code here, but
+No licence has been chosen yet. Until one is added, all rights are reserved by the authors: you may read the code here, but
 copying, modifying or redistributing it needs permission.
 
 ## Disclaimer
