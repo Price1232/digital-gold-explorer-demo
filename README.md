@@ -12,7 +12,14 @@ research edition runs on third-party market data that cannot be republished, so 
 interface code on a synthetic dataset instead.
 
 > **Live demo:** https://digital-gold-explorer-demo.vercel.app
-> 
+
+## Authors
+
+This project was built jointly by:
+
+- [Priyanshu Nayak](https://github.com/Price1232)
+- [Samyak Gulde](https://github.com/SamyakG19)
+
 ## Features
 
 - **Rolling correlation:** any pair, preset (30/90/252-day) or custom windows, optional Fisher-z 95% band, regime highlighting,
